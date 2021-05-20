@@ -65,12 +65,20 @@
   
   }
   &--important > &__item::before {
+    list-style: "\26A0";
     content: counters(item, ".") ". ";
   }
 
   &--thumbUp > &__item::before {
+    list-style: "\1F44D";
+    content: "•";
+  },
+  &--thumbDown > &__item::before {
+    list-style: "\1F44E";
     content: "•";
   }
+
+
 
   &__settings {
     display: flex;
