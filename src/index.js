@@ -410,6 +410,8 @@ export default class NestedList {
       list.classList.toggle(this.CSS.wrapperUnordered, style === 'unordered');
       list.classList.toggle(this.CSS.wrapperOrdered, style === 'ordered');
       list.classList.toggle(this.CSS.wrapperImportant, style === 'important');
+      list.classList.toggle(this.CSS.wrapperThumbUp, style === 'thumbUp');
+      list.classList.toggle(this.CSS.wrapperThumbDown, style === 'thumbDown');
       
     });
 
