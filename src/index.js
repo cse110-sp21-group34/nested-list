@@ -333,12 +333,12 @@ export default class NestedList {
     // const styleClass = style === 'ordered' ? this.CSS.wrapperOrdered : this.CSS.wrapperUnordered;
     if (style === "unordered") {
       styleClass= this.CSS.wrapperUnordered;
-    } else if (style === "important") {
-      styleClass = this.CSS.wrapperImportant;
-    } else if ((style === "thumbUp")) {
-      styleClass = this.CSS.wrapperThumbUp;
-    } else if ((style === "thumbDown")) {
-      styleClass = this.CSS.wrapperThumbDown;
+    // } else if (style === "important") {
+    //   styleClass = this.CSS.wrapperImportant;
+    // } else if ((style === "thumbUp")) {
+    //   styleClass = this.CSS.wrapperThumbUp;
+    // } else if ((style === "thumbDown")) {
+    //   styleClass = this.CSS.wrapperThumbDown;
     }
      else {
       styleClass = this.CSS.wrapperOrdered;
