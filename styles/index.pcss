@@ -62,6 +62,14 @@
 
   &--unordered > &__item::before {
     content: "•";
+  
+  }
+  &--important > &__item::before {
+    content: counters(item, ".") ". ";
+  }
+
+  &--thumbUp > &__item::before {
+    content: "•";
   }
 
   &__settings {
