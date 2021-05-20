@@ -3,7 +3,6 @@
   padding: 0;
   outline: none;
   counter-reset: item;
-  list-style: none;
 
   &__item {
     line-height: 1.6em;
@@ -35,6 +34,26 @@
       margin-right: 5px;
       white-space: nowrap;
     }
+  }
+  &--unordered {
+      list-style: disc;
+  }
+  
+  &--important {
+      list-style: "\26A0";
+  }
+
+  &--thumbUp {
+      list-style: "\1F44D";
+  }
+
+  &--thumbDown {
+      list-style: "\1F44E";
+  }
+  
+  
+  &--ordered {
+      list-style: decimal;
   }
 
   &--ordered > &__item::before {
