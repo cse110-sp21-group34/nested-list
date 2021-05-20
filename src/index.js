@@ -330,6 +330,7 @@ export default class NestedList {
    */
   makeListWrapper(style = this.listStyle, classes = []) {
     const tag = style === 'ordered' ? 'ol' : 'ul';
+    // const styleClass = style === 'ordered' ? this.CSS.wrapperOrdered : this.CSS.wrapperUnordered;
     if (style === "unordered") {
       styleClass= this.CSS.wrapperUnordered;
     } else if (style === "important") {
@@ -360,6 +361,9 @@ export default class NestedList {
       wrapper: 'cdx-nested-list',
       wrapperOrdered: 'cdx-nested-list--ordered',
       wrapperUnordered: 'cdx-nested-list--unordered',
+      wrapperImportant: 'cdx-list--important',
+      wrapperThumbUp : 'cdx-list--thumbUp',
+      wrapperThumbDown : 'cdx-list--thumbDown',
       item: 'cdx-nested-list__item',
       itemBody: 'cdx-nested-list__item-body',
       itemContent: 'cdx-nested-list__item-content',
