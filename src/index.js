@@ -330,7 +330,9 @@ export default class NestedList {
    */
   makeListWrapper(style = this.listStyle, classes = []) {
     const tag = style === 'ordered' ? 'ol' : 'ul';
-    let styleClass = style === 'ordered' ? this.CSS.wrapperOrdered : this.CSS.wrapperUnordered;
+    // let styleClass = style === 'ordered' ? this.CSS.wrapperOrdered : this.CSS.wrapperUnordered;
+    let styleClass = this.CSS.wrapperUnordered;
+
     if (style === "unordered") {
       styleClass= this.CSS.wrapperUnordered;
     } else if (style === "important") {
