@@ -38,7 +38,7 @@ export default class NestedList {
    * @public
    */
   static get enableLineBreaks() {
-    return true;
+    return false;
   }
 
   /**
@@ -59,7 +59,7 @@ export default class NestedList {
    * Render plugin`s main Element and fill it with saved data
    *
    * @param {object} params - tool constructor options
-   * @param {ListData} params.data - previously saved data
+   * @param {ListData} params.data - previously saved da
    * @param {object} params.config - user config for Tool
    * @param {object} params.api - Editor.js API
    * @param {boolean} params.readOnly - read-only mode flag
