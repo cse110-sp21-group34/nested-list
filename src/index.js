@@ -38,7 +38,7 @@ export default class NestedList {
    * @public
    */
   static get enableLineBreaks() {
-    return true;
+    return false;
   }
 
   /**
